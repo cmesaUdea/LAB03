@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         Funciones.cpp \
+        funciones_string.cpp \
         main.cpp
 
 HEADERS += \
-    Funciones.h
+    Funciones.h \
+    funciones_string.h

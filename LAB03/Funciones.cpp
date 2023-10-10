@@ -399,14 +399,15 @@ void administrador(short metodo, short opcion, short semilla)
     char clave_enc[]="sudo.dat";
     char clave[15], clave2[15], cedula[10], saldo[15], claveU[6];
     claveU[5]='\0';
-    cout << "Ingrese la constrasena del administrador: ";
+    cout << "Ingrese la palabra magica: ";
     cin >> clave;
     procesar_Archivo(clave_enc,semilla,opcion,metodo,clave2);
     system("cls");
     bool admin = comparar(clave, clave2);
     short op_admin=0;
+
     while (admin==true && op_admin != 2){
-        cout << "\t Has ingresado como administrador, ahora podras: \t" << endl;
+        cout << "\t ahora podras: \t" << endl;
         cout << "1. Crear usuarios" << endl;
         cout << "2. Salir del sistema" << endl;
         cout << "Ingresa que quieres hacer: ";
