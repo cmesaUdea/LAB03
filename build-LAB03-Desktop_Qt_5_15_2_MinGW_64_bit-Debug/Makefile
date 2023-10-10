@@ -248,6 +248,7 @@ Makefile: ../LAB03/LAB03.pro ../../../QT/5.15.2/mingw81_64/mkspecs/win32-g++/qma
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/qt_config.prf \
 		../../../QT/5.15.2/mingw81_64/mkspecs/win32-g++/qmake.conf \
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/exclusive_builds.prf \
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/toolchain.prf \
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/default_pre.prf \
@@ -266,7 +267,6 @@ Makefile: ../LAB03/LAB03.pro ../../../QT/5.15.2/mingw81_64/mkspecs/win32-g++/qma
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/yacc.prf \
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/lex.prf \
 		../LAB03/LAB03.pro \
-		.qmake.stash \
 		../../../QT/5.15.2/mingw81_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\LAB03\LAB03.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/spec_pre.prf:
@@ -447,6 +447,7 @@ Makefile: ../LAB03/LAB03.pro ../../../QT/5.15.2/mingw81_64/mkspecs/win32-g++/qma
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/qt_config.prf:
 ../../../QT/5.15.2/mingw81_64/mkspecs/win32-g++/qmake.conf:
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/exclusive_builds.prf:
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/toolchain.prf:
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/default_pre.prf:
@@ -465,7 +466,6 @@ Makefile: ../LAB03/LAB03.pro ../../../QT/5.15.2/mingw81_64/mkspecs/win32-g++/qma
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/yacc.prf:
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/lex.prf:
 ../LAB03/LAB03.pro:
-.qmake.stash:
 ../../../QT/5.15.2/mingw81_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\LAB03\LAB03.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
