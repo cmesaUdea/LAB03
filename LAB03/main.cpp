@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Funciones.h>
+#include <Code_Deco.h>
 //#include <funciones_string.h>
 
 using namespace std;

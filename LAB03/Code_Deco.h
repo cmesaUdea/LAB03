@@ -1,5 +1,5 @@
-#ifndef FUNCIONES_H
-#define FUNCIONES_H
+#ifndef CODE_DECO_H
+#define CODE_DECO_H
 
 void leer_archivo(char *archivo, char* contenido, unsigned long long longitud);
 void escribirEnArchivo(char* texto, char* nombreArchivo, unsigned long long longitud);
@@ -24,4 +24,4 @@ void crear_usuarios(char* cedula,char* claveU,char* saldo);
 bool inicio_sesion(char* cedula,char* clave, char *Susaldo);
 void actualizar_saldo(char *cedula, char* Cl_ingresada, char *nuevo_saldo);
 
-#endif // FUNCIONES_H
+#endif // CODE_DECO_H
